@@ -95,14 +95,14 @@ string telefono;
 do
 {
     Console.Write("Ingrese el teléfono del contacto (solo números): ");
-    telefono = Console.ReadLine() ?? "";  // Evita valores nulos
+    telefono = Console.ReadLine() ?? "";  
 } while (!Validaciones.EsTelefonoValido(telefono));
 
         string email;
 do
 {
     Console.Write("Ingrese el email del contacto (formato válido): ");
-    email = Console.ReadLine() ?? "";  // Evita valores nulos
+    email = Console.ReadLine() ?? "";  
 } while (!Validaciones.EsEmailValido(email));
 
         agenda[ultimoId] = new Contacto
