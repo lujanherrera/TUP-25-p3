@@ -160,6 +160,12 @@ class Clase : IEnumerable<Alumno> {
     }
 
 
+    public void LimpiarPracticos() {
+        foreach(var alumno in Alumnos) {
+            alumno.Practicos.Clear();
+        }
+    }
+
     public void VerificaPresentacionPractico(int practico) {
         const string Base = "../TP";
         Consola.Escribir($"=== Verificación de presentación del trabajo práctico TP{practico} ===", ConsoleColor.Cyan);
